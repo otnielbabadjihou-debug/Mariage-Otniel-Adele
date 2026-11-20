@@ -1,0 +1,1548 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#796453">
+    <meta name="description" content="Otniel et Adèle vous invitent à célébrer leur mariage le 26 décembre 2026.">
+    <title>Otniel & Adèle | Notre mariage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #796453;
+            --secondary: #b69b7e;
+            --cream: #faf7f1;
+            --light: #f1e9dd;
+            --dark: #352d27;
+            --white: #ffffff;
+            --gold: #c3a36b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--cream);
+            color: var(--dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .section-title h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 46px;
+            font-weight: 500;
+            margin-top: 8px;
+        }
+
+        .ornament {
+            color: var(--gold);
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 10;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            color: white;
+            font-size: 27px;
+            letter-spacing: 2px;
+        }
+
+        /* ACCUEIL */
+
+        .hero {
+            min-height: 750px;
+            height: 100vh;
+            max-height: 950px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(rgba(35, 28, 23, .52), rgba(35, 28, 23, .65)),
+                url('photo1.jpg') center/cover no-repeat,
+                linear-gradient(135deg, #82715f, #3d3028);
+        }
+
+        .hero-content {
+            width: 90%;
+            max-width: 850px;
+            padding-top: 40px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero-subtitle {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(65px, 11vw, 115px);
+            line-height: 1;
+            font-weight: 400;
+        }
+
+        .hero h1 .ampersand {
+            color: var(--gold);
+            font-style: italic;
+            font-size: .8em;
+        }
+
+        .hero-date {
+            margin-top: 30px;
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .hero-line {
+            width: 70px;
+            height: 1px;
+            background: var(--gold);
+            margin: 25px auto;
+        }
+
+        .hero-message {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 23px;
+            font-style: italic;
+        }
+
+        /* COMPTE À REBOURS */
+
+        .countdown-section {
+            background: var(--primary);
+            color: white;
+            padding: 45px 15px;
+            text-align: center;
+        }
+
+        .countdown-section h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 27px;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 45px;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            min-width: 75px;
+        }
+
+        .countdown-item strong {
+            display: block;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 43px;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        .countdown-item span {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 10px;
+        }
+
+        /* INVITATION */
+
+        .invitation {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .invitation p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 25px;
+            line-height: 1.7;
+            color: #65564b;
+        }
+
+        .invitation .verse {
+            margin-top: 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: var(--secondary);
+        }
+
+        /* PROGRAMME */
+
+        .programme {
+            background: var(--light);
+        }
+
+        .timeline {
+            max-width: 750px;
+            margin: auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: #c6ae91;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 15px 45px;
+            margin-bottom: 35px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: 50%;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            background: var(--primary);
+            border: 3px solid var(--light);
+            border-radius: 50%;
+            top: 24px;
+        }
+
+        .timeline-item:nth-child(odd)::before {
+            right: -7px;
+        }
+
+        .timeline-item:nth-child(even)::before {
+            left: -7px;
+        }
+
+        .timeline-icon {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .timeline-item h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
+            color: var(--primary);
+        }
+
+        .timeline-item p {
+            font-size: 13px;
+            color: #78695c;
+            margin-top: 5px;
+        }
+
+        .timeline-time {
+            display: inline-block;
+            font-size: 11px;
+            color: var(--secondary);
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        /* LIEUX */
+
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .place-card {
+            background: white;
+            text-align: center;
+            padding: 40px 25px;
+            border: 1px solid #eee5d9;
+            transition: .3s;
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.06);
+        }
+
+        .place-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .place-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            color: var(--primary);
+        }
+
+        .place-card p {
+            font-size: 13px;
+            margin: 12px 0 25px;
+            color: #78695c;
+        }
+
+        .map-button {
+            display: inline-block;
+            padding: 12px 22px;
+            background: var(--primary);
+            color: white;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: .3s;
+        }
+
+        .map-button:hover {
+            background: var(--dark);
+        }
+
+        /* GALERIE ANIMÉE */
+
+        .gallery {
+            background: var(--light);
+            overflow: hidden;
+        }
+
+        .gallery-intro {
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 21px;
+            color: #78695c;
+            margin-top: -30px;
+            margin-bottom: 35px;
+        }
+
+        .gallery-wrapper {
+            position: relative;
+            max-width: 850px;
+            margin: auto;
+            padding: 0 55px;
+        }
+
+        .gallery-track {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            border-radius: 5px;
+            gap: 20px;
+            padding: 10px 0 20px;
+        }
+
+        .gallery-track::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallery-slide {
+            flex: 0 0 100%;
+            scroll-snap-align: center;
+            background: white;
+            padding: 14px;
+            box-shadow: 0 12px 35px rgba(0,0,0,.10);
+            border: 1px solid #e8dccb;
+            border-radius: 4px;
+            transition: transform .5s ease, box-shadow .5s ease;
+        }
+
+        .gallery-slide:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 40px rgba(0,0,0,.15);
+        }
+
+        .gallery-slide img {
+            display: block;
+            width: 100%;
+            height: 480px;
+            object-fit: contain;
+            object-position: center;
+            background: #f8f5f0;
+        }
+
+        .gallery-caption {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            text-align: center;
+            padding: 12px 5px 3px;
+            color: var(--primary);
+        }
+
+        /* FLÈCHES DE NAVIGATION */
+
+        .gallery-arrow {
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            border: 1px solid var(--secondary);
+            background: white;
+            color: var(--primary);
+            font-size: 23px;
+            cursor: pointer;
+            z-index: 2;
+            transition: .3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,.08);
+        }
+
+        .gallery-arrow:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .gallery-prev {
+            left: 0;
+        }
+
+        .gallery-next {
+            right: 0;
+        }
+
+        /* INDICATEURS */
+
+        .gallery-dots {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .gallery-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: none;
+            background: #cbbba7;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .gallery-dot.active {
+            width: 28px;
+            border-radius: 10px;
+            background: var(--primary);
+        }
+
+        .gallery-counter {
+            text-align: center;
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: var(--secondary);
+            margin-top: 12px;
+        }
+
+        /* INFOS PRATIQUES */
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .info-card {
+            text-align: center;
+            padding: 30px 20px;
+            border: 1px solid #e9dfd2;
+            background: white;
+        }
+
+        .info-card .icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .info-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 25px;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            font-size: 12px;
+            color: #78695c;
+        }
+
+        .dress-highlight {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 12px;
+            background: var(--light);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        /* CONTACTS */
+
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .contact-link:hover {
+            color: var(--gold);
+        }
+
+        /* RSVP MIS EN EXERGUE */
+
+        .rsvp {
+            position: relative;
+            background:
+                linear-gradient(rgba(48, 37, 29, .88), rgba(48, 37, 29, .88)),
+                url('photo2.jpg') center/cover no-repeat;
+            text-align: center;
+            color: white;
+            padding: 110px 20px;
+            overflow: hidden;
+        }
+
+        .rsvp::before,
+        .rsvp::after {
+            content: '✦';
+            position: absolute;
+            color: rgba(195,163,107,.35);
+            font-size: 100px;
+        }
+
+        .rsvp::before {
+            top: 15px;
+            left: 7%;
+        }
+
+        .rsvp::after {
+            bottom: 15px;
+            right: 7%;
+        }
+
+        .rsvp-content {
+            max-width: 750px;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(195,163,107,.65);
+            padding: 55px 25px;
+            background: rgba(255,255,255,.04);
+        }
+
+        .rsvp-label {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .rsvp h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(40px, 6vw, 60px);
+            font-weight: 400;
+            line-height: 1.1;
+            margin: 18px 0;
+        }
+
+        .rsvp p {
+            font-size: 14px;
+            margin: 15px auto 30px;
+            max-width: 550px;
+        }
+
+        .rsvp-button {
+            display: inline-block;
+            padding: 19px 35px;
+            background: var(--gold);
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: .3s;
+            box-shadow: 0 8px 25px rgba(0,0,0,.2);
+            animation: pulse 2.5s infinite;
+        }
+
+        .rsvp-button:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .rsvp-note {
+            margin-top: 20px;
+            font-size: 11px;
+            opacity: .8;
+            letter-spacing: 1px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #302720;
+            color: #d8cabc;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        footer h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 38px;
+            font-weight: 400;
+        }
+
+        footer p {
+            font-size: 11px;
+            margin-top: 12px;
+            letter-spacing: 1px;
+        }
+
+        .footer-heart {
+            color: var(--gold);
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        /* ANIMATIONS */
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 8px 25px rgba(0,0,0,.2);
+            }
+            50% {
+                box-shadow: 0 8px 30px rgba(195,163,107,.5);
+            }
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width: 768px) {
+
+            .hero {
+                min-height: 650px;
+            }
+
+            .hero-subtitle {
+                letter-spacing: 3px;
+                font-size: 10px;
+            }
+
+            .hero-date {
+                font-size: 11px;
+                letter-spacing: 2px;
+            }
+
+            .section {
+                padding: 65px 0;
+            }
+
+            .section-title h2 {
+                font-size: 37px;
+            }
+
+            .countdown {
+                gap: 20px;
+            }
+
+            .countdown-item {
+                min-width: 65px;
+            }
+
+            .countdown-item strong {
+                font-size: 35px;
+            }
+
+            .timeline::before {
+                left: 10px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                width: 100%;
+                margin-left: 0;
+                padding: 15px 15px 15px 45px;
+                text-align: left;
+            }
+
+            .timeline-item:nth-child(odd)::before,
+            .timeline-item:nth-child(even)::before {
+                left: 3px;
+                right: auto;
+            }
+
+            .places-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-wrapper {
+                padding: 0 38px;
+            }
+
+            .gallery-slide img {
+                height: 380px;
+            }
+
+            .gallery-arrow {
+                width: 34px;
+                height: 34px;
+                font-size: 19px;
+            }
+
+            .rsvp {
+                padding: 75px 15px;
+            }
+
+            .rsvp-content {
+                padding: 40px 18px;
+            }
+
+            .rsvp-button {
+                padding: 16px 20px;
+                font-size: 11px;
+            }
+        }
+
+        @media(max-width: 380px) {
+
+            .countdown {
+                gap: 12px;
+            }
+
+            .countdown-item {
+                min-width: 58px;
+            }
+
+            .countdown-item strong {
+                font-size: 30px;
+            }
+
+            .gallery-slide img {
+                height: 300px;
+            }
+        }
+
+        /* RESPECT DES PRÉFÉRENCES D'ANIMATION */
+
+        @media(prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *, *::before, *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="container">
+            <a href="#" class="nav-logo">Otniel & Adèle</a>
+        </div>
+    </nav>
+
+    <!-- ACCUEIL -->
+
+    <header class="hero">
+        <div class="hero-content">
+
+            <p class="hero-subtitle">
+                Deux vies, un amour, une promesse
+            </p>
+
+            <h1>
+                Otniel <span class="ampersand">&</span><br>
+                Adèle
+            </h1>
+
+            <div class="hero-line"></div>
+
+            <p class="hero-date">
+                Samedi 26 Décembre 2026 · 9H
+            </p>
+
+            <p class="hero-message">
+                Nous avons hâte de partager ce bonheur avec vous.
+            </p>
+
+        </div>
+    </header>
+
+    <!-- COMPTE À REBOURS -->
+
+    <section class="countdown-section">
+
+        <h3>Le grand jour approche...</h3>
+
+        <div class="countdown">
+
+            <div class="countdown-item">
+                <strong id="days">00</strong>
+                <span>Jours</span>
+            </div>
+
+            <div class="countdown-item">
+                <strong id="hours">00</strong>
+                <span>Heures</span>
+            </div>
+
+            <div class="countdown-item">
+                <strong id="minutes">00</strong>
+                <span>Minutes</span>
+            </div>
+
+            <div class="countdown-item">
+                <strong id="seconds">00</strong>
+                <span>Secondes</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- INVITATION -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="invitation">
+
+                <div class="section-title">
+                    <span>Notre histoire</span>
+                    <h2>Une union bénie par Dieu</h2>
+                    <div class="ornament">❦</div>
+                </div>
+
+                <p>
+                    C'est avec une immense joie et une profonde reconnaissance
+                    envers Dieu que nous vous invitons à célébrer avec nous
+                    le début d'un nouveau chapitre de notre vie.
+                </p>
+
+                <p style="margin-top: 20px;">
+                    Votre présence à nos côtés rendra cette journée encore
+                    plus belle et inoubliable.
+                </p>
+
+                <div class="verse">
+                    « L'amour ne périt jamais. »<br>
+                    1 Corinthiens 13:8
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROGRAMME -->
+
+    <section class="section programme">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Le déroulement</span>
+                <h2>Programme de la journée</h2>
+                <div class="ornament">❦</div>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">⛪</div>
+                    <span class="timeline-time">09H00</span>
+                    <h3>Cérémonie religieuse</h3>
+                    <p>
+                        Un moment de louange, de prière et de bénédiction
+                        pour notre union à l'église.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">📸</div>
+                    <span class="timeline-time">À l'issue de la cérémonie</span>
+                    <h3>Photos & félicitations</h3>
+                    <p>
+                        Immortalisation de ces instants précieux avec
+                        nos familles et nos invités.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">🥂</div>
+                    <span class="timeline-time">Après la cérémonie</span>
+                    <h3>Réception</h3>
+                    <p>
+                        Direction l'Espace Morène pour partager
+                        un moment de convivialité et de bonheur.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">💃</div>
+                    <span class="timeline-time">Au cours de la réception</span>
+                    <h3>Festivités</h3>
+                    <p>
+                        Repas, animations, musique et célébration
+                        de notre amour avec tous nos proches.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LIEUX -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Nous vous attendons</span>
+                <h2>Les lieux de célébration</h2>
+                <div class="ornament">❦</div>
+            </div>
+
+            <div class="places-grid">
+
+                <div class="place-card">
+
+                    <div class="place-icon">⛪</div>
+
+                    <h3>Cérémonie religieuse</h3>
+
+                    <p>
+                        Église Évangélique Presbytérienne du Burkina Faso
+                        <br><br>
+                        Samedi 26 décembre 2026<br>
+                        À 9H00
+                    </p>
+
+                    <a
+                        class="map-button"
+                        href="https://www.google.com/maps/search/?api=1&query=Eglise+Evangelique+Presbyterienne+du+Burkina+Faso+Ouagadougou"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Voir sur Google Maps
+                    </a>
+
+                </div>
+
+                <div class="place-card">
+
+                    <div class="place-icon">🥂</div>
+
+                    <h3>Réception</h3>
+
+                    <p>
+                        Espace Morène<br><br>
+                        Après la cérémonie religieuse
+                    </p>
+
+                    <a
+                        class="map-button"
+                        href="https://www.google.com/maps/search/?api=1&query=Espace+Morene+Ouagadougou+Burkina+Faso"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Voir sur Google Maps
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIE PHOTO ANIMÉE -->
+
+    <section class="section gallery" id="galerie">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Quelques instants de bonheur</span>
+                <h2>Nos plus beaux souvenirs</h2>
+                <div class="ornament">❦</div>
+            </div>
+
+            <p class="gallery-intro">
+                Chaque image raconte une partie de notre histoire...
+            </p>
+
+            <div class="gallery-wrapper">
+
+                <!-- BOUTON PRECEDENT -->
+
+                <button
+                    class="gallery-arrow gallery-prev"
+                    id="galleryPrev"
+                    aria-label="Photo précédente">
+                    &#10094;
+                </button>
+
+                <!-- PHOTOS -->
+
+                <div class="gallery-track" id="galleryTrack">
+
+                    <div class="gallery-slide">
+                        <img
+                            src="./photo1.jpg"
+                            alt="Otniel et Adèle - Souvenir 1"
+                            loading="eager">
+                        <div class="gallery-caption">
+                            Un bonheur à partager
+                        </div>
+                    </div>
+
+                    <div class="gallery-slide">
+                        <img
+                            src="./photo2.jpg"
+                            alt="Otniel et Adèle - Souvenir 2"
+                            loading="lazy">
+                        <div class="gallery-caption">
+                            Des instants précieux
+                        </div>
+                    </div>
+
+                    <div class="gallery-slide">
+                        <img
+                            src="./photo3.jpg"
+                            alt="Otniel et Adèle - Souvenir 3"
+                            loading="lazy">
+                        <div class="gallery-caption">
+                            Une belle histoire qui continue
+                        </div>
+					</div>
+					
+					<div class="gallery-slide">
+                        <img
+                            src="./photo4.jpg"
+                            alt="Otniel et Adèle - Souvenir 4"
+                            loading="lazy">
+                        <div class="gallery-caption">
+                            Un moment merveilleux
+                        </div>
+					</div>
+					
+					<div class="gallery-slide">
+                        <img
+                            src="./photo5.jpg"
+                            alt="Otniel et Adèle - Souvenir 5"
+                            loading="lazy">
+                        <div class="gallery-caption">
+                            Une princesse
+                        </div>
+					</div>
+					
+					<div class="gallery-slide">
+                        <img
+                            src="./photo6.jpg"
+                            alt="Otniel et Adèle - Souvenir 6"
+                            loading="lazy">
+                        <div class="gallery-caption">
+                            Un prince
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- BOUTON SUIVANT -->
+
+                <button
+                    class="gallery-arrow gallery-next"
+                    id="galleryNext"
+                    aria-label="Photo suivante">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <!-- INDICATEURS DE POSITION -->
+
+            <div class="gallery-dots">
+
+                <button class="gallery-dot active"
+                    aria-label="Afficher la photo 1"></button>
+
+                <button class="gallery-dot"
+                    aria-label="Afficher la photo 2"></button>
+
+                <button class="gallery-dot"
+                    aria-label="Afficher la photo 3"></button>
+
+            </div>
+
+            <div class="gallery-counter" id="galleryCounter">
+                01 / 03
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- INFORMATIONS PRATIQUES -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Préparons ensemble cette journée</span>
+                <h2>Informations pratiques</h2>
+                <div class="ornament">❦</div>
+            </div>
+
+            <div class="info-grid">
+
+                <!-- TENUE -->
+
+                <div class="info-card">
+
+                    <div class="icon">👗</div>
+
+                    <h3>Tenue vestimentaire</h3>
+
+                    <p>
+                        Une tenue élégante et festive est souhaitée
+                        pour cette belle occasion.
+                    </p>
+
+                    <div class="dress-highlight">
+                        Un pagne a été choisi pour la circonstance !
+                    </div>
+
+                    <p style="margin-top: 12px;">
+                        Ceux qui le souhaitent pourront se procurer
+                        le pagne et le porter le jour de la célébration.
+                        La participation est facultative.
+                    </p>
+
+                </div>
+
+                <!-- HEBERGEMENT -->
+
+                <div class="info-card">
+
+                    <div class="icon">🏨</div>
+
+                    <h3>Hébergement</h3>
+
+                    <p>
+                        Pour toute information concernant les possibilités
+                        d'hébergement, veuillez nous contacter.
+                    </p>
+
+                    <p style="margin-top: 12px;">
+                        Nous serons heureux de vous orienter.
+                    </p>
+
+                </div>
+
+                <!-- CONTACTS -->
+
+                <div class="info-card">
+
+                    <div class="icon">🤝</div>
+
+                    <h3>Contacts & renseignements</h3>
+
+                    <p>
+                        Pour toute question concernant l'organisation,
+                        la tenue ou votre participation,
+                        vous pouvez nous joindre aux numéros suivants :
+                    </p>
+
+                    <div class="contact-list">
+
+                        <a class="contact-link" href="tel:+22655774025">
+                            ☎ +226 55 77 40 25
+                        </a>
+
+                        <a class="contact-link" href="tel:+22678461313">
+                            ☎ +226 78 46 13 13
+                        </a>
+
+                        <a class="contact-link" href="tel:+22666087114">
+                            ☎ +226 66 08 71 14
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RSVP : SECTION PRINCIPALE -->
+
+    <section class="rsvp" id="rsvp">
+
+        <div class="container">
+
+            <div class="rsvp-content">
+
+                <span class="rsvp-label">
+                    Votre présence compte pour nous
+                </span>
+
+                <h2>
+                    Célébrons ensemble<br>
+                    ce jour exceptionnel !
+                </h2>
+
+                <div class="ornament">❦</div>
+
+                <p>
+                    Nous serions particulièrement heureux de vous compter
+                    parmi nos invités pour partager ce moment unique
+                    et inoubliable de notre vie.
+                </p>
+
+                <p>
+                    Merci de prendre quelques instants pour confirmer
+                    votre présence à travers notre formulaire.
+                </p>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc0Okqv_PRpdxUAIR3176I8us5S0JVwO1oauaf9h1OLXJ0Hxg/viewform?usp=publish-editor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="rsvp-button">
+
+                    ♥ CONFIRMER MA PRÉSENCE (RSVP) →
+
+                </a>
+
+                <div class="rsvp-note">
+                    SAMEDI 26 DÉCEMBRE 2026 · 09H00
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PIED DE PAGE -->
+
+    <footer>
+
+        <div class="container">
+
+            <h2>Otniel & Adèle</h2>
+
+            <p>
+                26 DÉCEMBRE 2026 · UN JOUR, UNE PROMESSE, POUR LA VIE.
+            </p>
+
+            <div class="footer-heart">♥</div>
+
+            <p>
+                Avec amour et reconnaissance envers Dieu.
+            </p>
+
+            <p style="margin-top: 25px; opacity: .5;">
+                © 2026 Otniel & Adèle. Tous droits réservés.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        /* COMPTE À REBOURS */
+
+        const weddingDate =
+            new Date("2026-12-26T09:00:00Z").getTime();
+
+        function updateCountdown() {
+
+            const now = new Date().getTime();
+            const difference = weddingDate - now;
+
+            const daysElement = document.getElementById("days");
+            const hoursElement = document.getElementById("hours");
+            const minutesElement = document.getElementById("minutes");
+            const secondsElement = document.getElementById("seconds");
+
+            if (difference <= 0) {
+
+                daysElement.textContent = "00";
+                hoursElement.textContent = "00";
+                minutesElement.textContent = "00";
+                secondsElement.textContent = "00";
+
+                document.querySelector(".countdown-section h3")
+                    .textContent = "Le grand jour est arrivé ! ❤️";
+
+                return;
+            }
+
+            const days = Math.floor(
+                difference / (1000 * 60 * 60 * 24)
+            );
+
+            const hours = Math.floor(
+                (difference / (1000 * 60 * 60)) % 24
+            );
+
+            const minutes = Math.floor(
+                (difference / (1000 * 60)) % 60
+            );
+
+            const seconds = Math.floor(
+                (difference / 1000) % 60
+            );
+
+            daysElement.textContent =
+                String(days).padStart(2, "0");
+
+            hoursElement.textContent =
+                String(hours).padStart(2, "0");
+
+            minutesElement.textContent =
+                String(minutes).padStart(2, "0");
+
+            secondsElement.textContent =
+                String(seconds).padStart(2, "0");
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+
+        /* GALERIE PHOTO INTERACTIVE */
+
+        const galleryTrack =
+            document.getElementById("galleryTrack");
+
+        const gallerySlides =
+            document.querySelectorAll(".gallery-slide");
+
+        const galleryDots =
+            document.querySelectorAll(".gallery-dot");
+
+        const galleryCounter =
+            document.getElementById("galleryCounter");
+
+        const previousButton =
+            document.getElementById("galleryPrev");
+
+        const nextButton =
+            document.getElementById("galleryNext");
+
+        let currentPhoto = 0;
+
+        function showPhoto(index) {
+
+            currentPhoto =
+                (index + gallerySlides.length) % gallerySlides.length;
+
+            const slideWidth =
+                gallerySlides[0].getBoundingClientRect().width;
+
+            const gap = parseFloat(
+                getComputedStyle(galleryTrack).columnGap
+            ) || 0;
+
+            galleryTrack.scrollTo({
+                left: currentPhoto * (slideWidth + gap),
+                behavior: "smooth"
+            });
+
+            updateGalleryIndicators();
+        }
+
+        function updateGalleryIndicators() {
+
+            galleryDots.forEach((dot, index) => {
+
+                dot.classList.toggle(
+                    "active",
+                    index === currentPhoto
+                );
+
+            });
+
+            galleryCounter.textContent =
+                String(currentPhoto + 1).padStart(2, "0") +
+                " / " +
+                String(gallerySlides.length).padStart(2, "0");
+        }
+
+        previousButton.addEventListener("click", () => {
+            showPhoto(currentPhoto - 1);
+        });
+
+        nextButton.addEventListener("click", () => {
+            showPhoto(currentPhoto + 1);
+        });
+
+        galleryDots.forEach((dot, index) => {
+
+            dot.addEventListener("click", () => {
+                showPhoto(index);
+            });
+
+        });
+
+        /* Synchronisation lors du défilement tactile */
+
+        let scrollTimeout;
+
+        galleryTrack.addEventListener("scroll", () => {
+
+            clearTimeout(scrollTimeout);
+
+            scrollTimeout = setTimeout(() => {
+
+                const slideWidth =
+                    gallerySlides[0].getBoundingClientRect().width;
+
+                const gap = parseFloat(
+                    getComputedStyle(galleryTrack).columnGap
+                ) || 0;
+
+                currentPhoto = Math.round(
+                    galleryTrack.scrollLeft / (slideWidth + gap)
+                );
+
+                currentPhoto = Math.max(
+                    0,
+                    Math.min(currentPhoto, gallerySlides.length - 1)
+                );
+
+                updateGalleryIndicators();
+
+            }, 100);
+
+        });
+
+    </script>
+
+</body>
+</html>
